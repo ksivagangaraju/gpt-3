@@ -1,0 +1,108 @@
+.feature-container {
+    width: 1170px;
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-head-container {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-link {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #FF8A71;
+    text-decoration: none;
+    margin: 34px 0;
+}
+
+.feature-heading {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 45px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.feature-items-container {
+    width: 55%;
+}
+
+.feature-item-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+
+.feature-text-line-container {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-desc {
+    width: 55%;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #81AFDD;
+}
+
+.feature-line {
+    width: 38px;
+    height: 3px;
+    background: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%), #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    margin-bottom: 4px;
+}
+
+.feature-text {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.04em;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width: 768px) {
+    .feature-container {
+        flex-direction: column;
+    }
+    .feature-head-container {
+        width: 100%;
+    }
+    .feature-items-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .feature-item-container {
+        flex-direction: column;
+    }
+    .feature-text-line-container {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    .feature-desc {
+        width: 100%;
+    }
+}

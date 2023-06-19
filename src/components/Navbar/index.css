@@ -1,0 +1,135 @@
+.navbar-container {
+    width: 1170px;
+    max-width: 90%;
+    margin: auto;
+    padding-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0 34px;
+    padding: 0;
+    list-style-type: none;
+}
+
+.nav-link {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.sign-in-out-and-menu-container {
+    display: flex;
+    align-items: center;
+    gap: 0 26px;
+}
+
+.sign-in-out-container {
+    height: 58px;
+    display: flex;
+    align-items: center;
+    gap: 0 26px;
+}
+
+.sign-in {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.sign-out {
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    align-self: stretch;
+    width: 152px;
+    background: #FF4820;
+    border-radius: 5px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.responsive-nav-links-and-sign-in-out {
+    display: none;
+}
+
+.menu-button {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    margin-left: 15px;
+}
+
+.menu-icon {
+    font-size: 28px;
+    color: #FFFFFF;
+}
+
+.responsive-nav-sign-container {
+    display: none;
+}
+
+@media screen and (max-width: 992px) {
+    .nav-links {
+        display: none;
+    }
+    .responsive-nav-links-and-sign-in-out {
+        display: block;
+    }
+    .responsive-sign {
+        display: none;
+    }
+    .responsive-nav-sign-container {
+        display: flex;
+        flex-direction: column;
+        padding: 15px 32px;
+        gap: 15px;
+        background-color: #031B34;
+        list-style-type: none;
+        position: absolute;
+        top: 125px;
+        right: 5%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .sign-in-out-container {
+        display: none;
+    }
+    .responsive-nav-sign-container {
+        top: 90px;
+    }
+    .responsive-sign {
+        display: block;
+    }
+    .nav-link, .sign-in, .sign-out {
+        font-size: 15px;
+    }
+}

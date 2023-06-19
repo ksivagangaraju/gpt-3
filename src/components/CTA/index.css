@@ -1,0 +1,63 @@
+.cta-container {
+    width: 1170px;
+    max-width: 90%;
+    margin: 95px auto;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10.7236px;
+    padding: 35px;
+}
+
+.cta-head-container {
+    width: calc(100% - 200px);
+    display: flex;
+    flex-direction: column;
+}
+
+.cta-para {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 30px;
+    color: #0E0E0E;
+}
+
+.cta-heading {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.cta-button {
+    width: 189.14px;
+    height: 59.4px;
+    background: #000000;
+    border-radius: 40px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+@media screen and (max-width: 992px) {
+    .cta-container {
+        flex-direction: column;
+        margin: 38px auto;
+    }
+    .cta-head-container {
+        width: 100%;
+        margin-bottom: 34px;
+    }
+}

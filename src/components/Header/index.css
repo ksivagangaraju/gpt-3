@@ -1,0 +1,165 @@
+.header-container {
+    width: 1170px;
+    max-width: 90%;
+    margin: auto;
+}
+
+.header, .header-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.header-content {
+    width: 55%;
+    padding: 75px 0;
+}
+
+.header-heading {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 62px;
+    line-height: 75px;
+    letter-spacing: -0.04em;
+    background: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 33px;
+}
+
+.header-para {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #81AFDD;
+    margin-bottom: 33px;
+}
+
+.header-input-container {
+    width: 100%;
+    height: 73px;
+    display: flex;
+    margin-bottom: 38px;
+}
+
+.header-input {
+    flex-grow: 1;
+    background: #052D56;
+    border-radius: 5px 0px 0px 5px;
+    color: #FFFFFF;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    border: 0;
+    outline: none;
+    padding: 0 32px;
+}
+
+.header-input-button {
+    width: 174px;
+    background: #FF4820;
+    border-radius: 0px 5px 5px 0px;
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.header-people-para {
+    font-family: 'Manrope';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #FFFFFF;
+}
+
+.header-illustration {
+    width: 45%;
+}
+
+.companies-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.companies-logos {
+    width: 65%;
+}
+
+@media screen and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .header-content {
+        width: 100%;
+        padding: 55px 0;
+    }
+    .header-illustration {
+        width: 100%;
+    }
+    .header-heading {
+        font-size: 52px;
+        line-height: 62px;
+        margin-bottom: 25px;
+    }
+    .header-para, .header-input-button{
+        font-size: 15px;
+    }
+    .header-input {
+        font-size: 15px;
+        padding: 0 15px;
+    }
+    .header-input-container {
+        height: 65px;
+    }
+    .header-input-button {
+        width: 150px;
+    }
+    .companies-container {
+        margin-top: 50px;
+    }
+    .companies-logos {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    .header-content {
+        padding: 32px 0;
+    }
+    .header-heading {
+        font-size: 38px;
+        line-height: 48px;
+        margin-bottom: 18px;
+    }
+    .header-group {
+        flex-wrap: wrap;
+    }
+    .header-input-container {
+        height: 55px;
+    }
+    .header-input-button {
+        width: 95px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+    .companies-logos {
+        width: 90%;
+    }
+}
